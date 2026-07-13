@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "starfetch": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["node_modules/@starfetch-js/mcp/dist/index.js"]
+    }
+  }
+}

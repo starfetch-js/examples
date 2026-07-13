@@ -1,0 +1,18 @@
+# Exoplanet Transiting Hosts
+
+[Open this example in StackBlitz](https://stackblitz.com/github/starfetch-js/examples?file=09-exoplanet-transiting-hosts%2FREADME.md)
+
+Fetch a compact list of known transiting planet hosts for dashboards or simple
+follow-up planning inputs. This example retrieves data only; it does not compute
+ephemerides or observability.
+
+Service: NASA Exoplanet Archive TAP preset, `exoplanetarchive`.
+Table: `pscomppars`.
+
+Run:
+
+```sh
+node 09-exoplanet-transiting-hosts/run.mjs
+```
+
+The workflow writes `out/transiting-hosts.jsonl`.
