@@ -1,0 +1,26 @@
+name: Latest Starfetch canary
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Overlay latest Starfetch packages
+        run: >-
+          npm install --no-save --package-lock=false
+          @starfetch-js/cli@latest
+          @starfetch-js/core@latest
+          @starfetch-js/mcp@latest
+          @starfetch-js/skill@latest
+      - run: npm run typecheck
+      - run: npm run smoke
