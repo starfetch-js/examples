@@ -16,10 +16,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@starfetch-js/cli": "0.2.0",
-    "@starfetch-js/core": "0.2.0",
-    "@starfetch-js/mcp": "0.2.0",
-    "@starfetch-js/skill": "0.2.0"
+    "@starfetch-js/cli": "0.2.3",
+    "@starfetch-js/core": "0.2.3",
+    "@starfetch-js/mcp": "0.2.3",
+    "@starfetch-js/skill": "0.2.3"
   },
   "devDependencies": {
     "@eslint/js": "9.39.4",
