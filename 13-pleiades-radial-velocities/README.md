@@ -12,7 +12,7 @@ node 13-pleiades-radial-velocities/run.mjs
 
 The local Starfetch MCP server submits `members.sql` to Gaia@AIP with the Harvard VizieR export as a TAP upload. The export contains the published `Source` and `RV` columns. The query joins on the DR2 source identifier and fetches Gaia's DR2 velocity independently.
 
-After the job completes, the runner passes its VOTable to `counterparts.sql`. It uses `uploadFromJob` when the server advertises it. With the pinned npm server, the runner fetches and forwards the VOTable through the existing MCP upload tools. Set `STARFETCH_MCP_ENTRY` to the absolute path of a built Starfetch MCP entry point to select that server. Both paths require the public services to be available.
+After the job completes, the runner passes its VOTable to `counterparts.sql`. It uses `uploadFromJob` when the server advertises it. With older servers that do not advertise this feature, the runner fetches and forwards the VOTable through the existing MCP upload tools. Set `STARFETCH_MCP_ENTRY` to the absolute path of a built Starfetch MCP entry point to select that server. Both paths require the public services to be available.
 
 Each successful run prints its output directory under `out/`:
 
