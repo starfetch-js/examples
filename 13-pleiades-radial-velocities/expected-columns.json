@@ -1,0 +1,12 @@
+[
+  "dr2_id",
+  "matched_dr2_id",
+  "deposited_rv",
+  "rv_dr2_kms",
+  "dr3_id",
+  "matched_dr3_id",
+  "rv_dr3_kms",
+  "rv_dr3_error_kms",
+  "separation_mas",
+  "competing_dr2_id"
+]
