@@ -69,6 +69,7 @@ failure recovery against public TAP services.
 - `10-irsa-wise-region-query`: IRSA AllWISE cone query.
 - `11-irsa-spatial-query-cookbook`: IRSA cone, box, and polygon queries.
 - `12-gaia-async-large-query`: Gaia TAP async submit/status/wait/fetch/delete.
+- [Pleiades radial velocities](13-pleiades-radial-velocities/README.md): reproduce the published sample and identify candidates that gained a Gaia DR3 velocity.
 
 ## Development checks
 

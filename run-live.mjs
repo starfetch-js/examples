@@ -15,6 +15,7 @@ const examples = [
   "10-irsa-wise-region-query",
   "11-irsa-spatial-query-cookbook",
   "12-gaia-async-large-query",
+  "13-pleiades-radial-velocities",
 ];
 
 for (const example of examples) {
